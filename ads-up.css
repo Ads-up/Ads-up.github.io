@@ -1,3 +1,33 @@
+.active .buttons {
+  padding: 5px 0;
+  background: #eee;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+.carouselbox button {
+  border: none;
+  display: none;
+}
+.active button {
+  display: block;
+}
+.offscreen {
+  position: absolute;
+  left: -2000px;
+}
+
+
+@media (max-width:750px)
+{
+ .logo img {
+   position: fixed;
+   width: 100px;
+   height: 100px;
+ }
+}
+
+
 body {
     margin: 0;
     background-color: #fff;
@@ -7,9 +37,16 @@ body {
   float: left;
 }
 .container {
-  margin-top: 0;
-  margin-left: 0;
-  float: left;
+   float: left;
+}
+
+.menubar {
+  margin-top: 200px;
+}
+.logo img {
+  position: fixed;
+  width: 200px;
+  height: 200px;
 }
 
 ul {
@@ -21,13 +58,25 @@ ul {
     position: fixed;
     height: 100%;
     overflow: auto;
+    max-width: 260px;
+    min-width: 130px;
 }
-
+.navbar-left {
+  padding: 0;
+}
+.dropdown-menu {
+  min-width: 100% !important;
+  position: relative !important;
+}
+.dropdown-menu li a {
+  white-space: inherit !important;
+}
 li a {
     display: block;
     color: white;
     padding: 8px 16px;
     text-decoration: none;
+
 }
 
 li a.active {
@@ -41,7 +90,7 @@ li a:hover:not(.active) {
 }
 
 article {
-  margin-left:25%;
+  margin-left:10%;
   padding:1px 16px;
-  height:1000px;>
+  height:1000px;
 }
