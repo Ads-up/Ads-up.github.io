@@ -71,6 +71,10 @@ ul {
 .dropdown-menu li a {
   white-space: inherit !important;
 }
+.dropdown-menu li a:focus,
+.dropdown-menu li a:hover {
+  background-color: #D5D6D8 !important;
+}
 li a {
     display: block;
     color: white;
@@ -80,13 +84,16 @@ li a {
 }
 
 li a.active {
-    background-color: #595959;
+    background-color: #021E61;
     color: white;
 }
 
 li a:hover:not(.active) {
     background-color: #555;
     color: white;
+}
+li a:focus, a:hover {
+  text-decoration: none !important;
 }
 
 article {
