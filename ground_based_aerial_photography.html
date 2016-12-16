@@ -18,62 +18,97 @@
   <title>Ads-up Limited</title>
   </head>
   <body>
-<div class="container">
-  <div class= "logo">
-      <a href="home.html" class="navbar-left"><img src="http://ads-up-uk.com/wp/wp-content/uploads/2012/10/main_logo.jpg">
-</div>
-<div class="menubar">
-  <ul>
-    <li>
-      <a class="active" href="home.html">Home</a>
-    </li>
-    <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ground Based Aerial Photography<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-            <li>
-              <a href="ground_based_aerial_photography.html">Examples</a>
-            </li>
-            <li>
-              <a href="structural_detail_images.html">Structural Detail Images</a>
-            </li>
-          </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RPAS Aerial Photography<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="home.html">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav pull-right">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ground Based Aerial Photography
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="ground_based_aerial_photography.html">Examples</a>
+              </li>
+              <li>
+                <a href="structural_detail_images.html">Structural Detail Images</a>
+              </li>
+            </ul>
+        </li>
+           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">RPAS Aerial Photography
+             <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+              <li><a href="agricultural.html">Agricultural</a></li>
+              <li><a href="forestry.html">Forestry</a></li>
+              <li><a href="industrial.html">Industrial</a></li>
+              <li><a href="domestic.html">Domestic</a></li>
+              <li><a href="assorted_shots.html">Assorted Shots</a></li>
+      			</ul>    </li>
+          <li><a href="high_power_logo_projection.html">High Power Logo Projection</a> </li>
+      	  <li><a href="documentation.html">Documentation</a> </li>
+          <li><a href="contact.html">Contact Us</a></li>
+      </nav>
+     </div>
+    <div class="container">
+      <div class= "logo">
+          <a href="home.html" class="navbar-left"><img src="media/main_logo.jpg">
+    </div>
+    <div class="menubar">
+      <ul>
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li class="dropdown">
+                <a href="#" class="active" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ground Based Aerial Photography<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="agricultural.html">Agricultural</a>
+                  <a href="ground_based_aerial_photography.html">Examples</a>
                 </li>
                 <li>
-                  <a href="forestry.html">Forestry</a>
-                </li>
-                <li>
-                  <a href="industrial.html">Industrial</a>
-                </li>
-                <li>
-                  <a href="domestic.html">Domestic</a>
-                </li>
-                <li>
-                  <a href="assorted_shots.html">Assorted Shots</a>
+                  <a href="structural_detail_images.html">Structural Detail Images</a>
                 </li>
               </ul>
-      </li>
-    <li>
-      <a href="high_power_logo_projection.html">High Power Logo Projection</a>
-    </li>
-    <li>
-      <a href="documentation.html">Documentation</a>
-    </li>
-    <li>
-      <a href="contact.html">Contact Us</a>
-    </li>
-  </ul>
-</div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RPAS Aerial Photography<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                    <li>
+                      <a href="agricultural.html">Agricultural</a>
+                    </li>
+                    <li>
+                      <a href="forestry.html">Forestry</a>
+                    </li>
+                    <li>
+                      <a href="industrial.html">Industrial</a>
+                    </li>
+                    <li>
+                      <a href="domestic.html">Domestic</a>
+                    </li>
+                    <li>
+                      <a href="assorted_shots.html">Assorted Shots</a>
+                    </li>
+                  </ul>
+          </li>
+        <li>
+          <a href="high_power_logo_projection.html">High Power Logo Projection</a>
+        </li>
+        <li>
+          <a href="documentation.html">Documentation</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
 
-<div style="margin-left:25%;padding:1px 16px;height:1000px;">
-<article>
-
-
+<article class="carousel-container">
+  <div id="scrollable">
 <!-- Carousel
 ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -82,35 +117,67 @@
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img class="first-slide" src="media/fourcrosses.jpg" alt="First slide">
+      <img class="first-slide" src="media/GBAP Examples/1-fourcrosses.jpg" alt="First slide">
       <div class="container">
         <div class="carousel-caption">
-          <h1>Example headline.</h1>
-          <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+          <h1>Four Crosses assignment</h1>
         </div>
       </div>
     </div>
     <div class="item">
-      <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+      <img class="second-slide" src="media/GBAP Examples/2-navalquarters.jpg" alt="Second slide">
       <div class="container">
         <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+          <h1>Naval officer's quarters in Gosport</h1>
         </div>
       </div>
     </div>
     <div class="item">
-      <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+      <img class="third-slide" src="media/GBAP Examples/3-countrycottage.jpg" alt="Third Slide">
       <div class="container">
         <div class="carousel-caption">
-          <h1>One more for good measure.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+          <h1>A country cottage in Mid-Wales</h1>
+          <p> Sold (stc) shortly after this image appeared on the estate agent's website.</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img class="fourth-slide" src="media/GBAP Examples/4-countrycottage2.jpg" alt="Fourth Slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>A country cottage in Mid-Wales</h1>
+          <p>Another view</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img class="fifth-slide" src="media/GBAP Examples/5-EastAnglian.jpg" alt="Fifth Slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>East Anglian House</h1>
+          <p>Private commission</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img class="sixth-slide" src="media/GBAP Examples/6-newbuilds-at-abermule.jpg" alt="Sixth Slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Newbuilds at Abermule</h1>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img class="seventh-slide" src="media/GBAP Examples/7-HareHounds.jpg" alt="Seventh Slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Hare Hounds</h1>
         </div>
       </div>
     </div>
@@ -124,9 +191,9 @@
     <span class="sr-only">Next</span>
   </a>
 </div><!-- /.carousel -->
-</article>
 </div>
-
+</div>
+</article>
 
   </body>
   </html>

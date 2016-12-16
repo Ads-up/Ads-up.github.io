@@ -32,14 +32,26 @@
 @media (max-width:767px)
 {
  .logo img {
-   position: fixed;
+   position: relative !important;
    width: 100px;
    height: 100px;
  }
   .menubar {
     display:none !important;
   }
-
+  article {
+    margin: 0 !important;
+    margin-top: 10px !important;
+  }
+.carousel-inner .item img {
+    position: relative !important;
+  }
+.carousel {
+  width: 100% !important;
+}
+article.carousel-container {
+  position: relative !important;
+}
 }
 body {
     margin: 0;
@@ -76,6 +88,22 @@ body {
 .navbar-inverse .navbar-toggle {
   background-color: #000033 !important;
   border-color: #000033 !important;
+}
+
+.navbar-inverse .navbar-nav .dropdown-toggle .open a:focus,
+.navbar-inverse .navbar-nav .dropdown-toggle .open a:hover {
+  background-color: #000033 !important;
+}
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+  background-color: #000033 !important;
+}
+
+
+.navbar-inverse .navbar-nav .dropdown-menu li a {
+  background-color: #E1E1E1;
+  color: #333 !important;
 }
 .navbar-header {
   background-color: #000033;
@@ -139,4 +167,11 @@ article {
   margin-left:25%;
   padding:1px 16px;
   height:1000px;
+  position: absolute;
+}
+article.carousel-container {
+  position: fixed !important;
+}
+.carousel {
+  width: 70%;
 }
