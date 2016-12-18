@@ -12,118 +12,127 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="icon" href="icon.ico">
-  <title>Ads-up Limited</title>
+      <link rel="icon" href="icon.ico">
+        <title>Ads-up Limited</title>
   </head>
   <body>
-
-
-<!-- Menu-->
-<div class="container">
-  <div class= "logo">
-      <a href="home.html" class="navbar-left"><img src="media/main_logo.jpg">
-</div>
-<div class="menubar">
-  <ul>
-    <li>
-      <a href="home.html">Home</a>
-    </li>
-    <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ground Based Aerial Photography<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-            <li>
-              <a href="ground_based_aerial_photography.html">Examples</a>
+<!-- Small screen top navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav pull-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ground Based Aerial Photography
+              <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="ground_based_aerial_photography.html">Examples</a></li>
+                  <li><a href="structural_detail_images.html">Structural Detail Images</a></li>
+                </ul>
             </li>
-            <li>
-              <a href="structural_detail_images.html">Structural Detail Images</a>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">RPAS Aerial Photography
+              <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="agricultural.html">Agricultural</a></li>
+                  <li><a href="forestry.html">Forestry</a></li>
+                  <li><a href="industrial.html">Industrial</a></li>
+                  <li><a href="domestic.html">Domestic</a></li>
+                  <li><a href="assorted_shots.html">Assorted Shots</a></li>
+      			    </ul>
             </li>
-          </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RPAS Aerial Photography<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-                <li>
-                  <a href="agricultural.html">Agricultural</a>
-                </li>
-                <li>
-                  <a href="forestry.html">Forestry</a>
-                </li>
-                <li>
-                  <a href="industrial.html">Industrial</a>
-                </li>
-                <li>
-                  <a href="domestic.html">Domestic</a>
-                </li>
-                <li>
-                  <a href="assorted_shots.html">Assorted Shots</a>
-                </li>
-              </ul>
-      </li>
-    <li>
-      <a href="high_power_logo_projection.html">High Power Logo Projection</a>
-    </li>
-    <li>
-      <a href="documentation.html">Documentation</a>
-    </li>
-    <li>
-      <a class="active" href="contact.html">Contact Us</a>
-    </li>
-  </ul>
-</div>
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-<div class="container-fluid">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="home.html">Home</a>
-  </div>
-  <div class="collapse navbar-collapse" id="myNavbar">
-    <ul class="nav navbar-nav pull-right">
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ground Based Aerial Photography
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li>
-            <a href="ground_based_aerial_photography.html">Examples</a>
-          </li>
-          <li>
-            <a href="structural_detail_images.html">Structural Detail Images</a>
-          </li>
-        </ul>
-    </li>
-       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">RPAS Aerial Photography
-         <span class="caret"></span></a>
-         <ul class="dropdown-menu">
-          <li><a href="agricultural.html">Agricultural</a></li>
-          <li><a href="forestry.html">Forestry</a></li>
-          <li><a href="industrial.html">Industrial</a></li>
-          <li><a href="domestic.html">Domestic</a></li>
-          <li><a href="assorted_shots.html">Assorted Shots</a></li>
-  			</ul>    </li>
-      <li><a href="high_power_logo_projection.html">High Power Logo Projection</a> </li>
-  	  <li><a href="documentation.html">Documentation</a> </li>
-      <li><a href="contact.html">Contact Us</a></li>
-  </nav>
- </div>
-
+            <li><a href="high_power_logo_projection.html">High Power Logo Projection</a></li>
+      	    <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+<!-- Page content -->
+  <article>
+      <h1>Contact us</h1>
+        <hr>
+        <br>
 <!-- Send message -->
-<form class="form-inline">
-  <div class="form-group">
-    <label for="exampleInputName2">Name</label>
-    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail2">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-  </div>
-  <input type="text" class="form-control" placeholder="Text input">
-</form>
-
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="exampleInputName2">Name</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+      </div>
+        <br>
+        <br>
+      <div class="form-group">
+        <label for="exampleInputEmail2">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+      </div>
+          <br>
+          <br>
+        <input type="text" class="form-control" placeholder="Text input">
+    </form>
+        <br>
+        <br>
 <!-- Email -->
-<address>
-  <strong>Email:</strong>
-  <a href="mailto:#">adsup@357ltd.com</a>
-</address>
+    <address>
+      <strong>Our email:</strong>
+      <a href="mailto:#">adsup@357ltd.com</a>
+    </address>
+      <br><br>
+    <h4>Check out our Facebook page:</h4>
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAdsUpElevatedPhotography&tabs=timeline&width=350&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+        width="350"
+        height="500"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowTransparency="true">
+      </iframe>
+
+  </article>
+
+
+  <!-- Logo -->
+       <div class="container">
+         <div class= "logo">
+           <a href="home.html" class="navbar-left"><img src="media/main_logo.jpg">
+         </div>
+  <!-- Main menubar -->
+         <div class="menubar">
+           <ul>
+             <li>
+               <a href="home.html">Home</a>
+             </li>
+             <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+               aria-haspopup="true" aria-expanded="false">Ground Based Aerial Photography
+               <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="ground_based_aerial_photography.html">Examples</a></li>
+                  <li><a href="structural_detail_images.html">Structural Detail Images</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+              aria-haspopup="true" aria-expanded="false">RPAS Aerial Photography
+              <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="agricultural.html">Agricultural</a></li>
+                  <li><a href="forestry.html">Forestry</a></li>
+                  <li><a href="industrial.html">Industrial</a></li>
+                  <li><a href="domestic.html">Domestic</a></li>
+                  <li><a href="assorted_shots.html">Assorted Shots</a></li>
+                </ul>
+            </li>
+            <li><a href="high_power_logo_projection.html">High Power Logo Projection</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a class="active" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+    </body>
+  </html>

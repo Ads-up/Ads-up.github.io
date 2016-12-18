@@ -12,99 +12,164 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="icon" href="icon.ico">
-  <title>Ads-up Limited</title>
+      <link rel="icon" href="icon.ico">
+        <title>Ads-up Limited</title>
   </head>
   <body>
+    
+    <!-- Small screen top navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="home.html">Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav pull-right">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ground Based Aerial Photography
+                  <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="ground_based_aerial_photography.html">Examples</a></li>
+                      <li><a href="structural_detail_images.html">Structural Detail Images</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">RPAS Aerial Photography
+                  <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="agricultural.html">Agricultural</a></li>
+                      <li><a href="forestry.html">Forestry</a></li>
+                      <li><a href="industrial.html">Industrial</a></li>
+                      <li><a href="domestic.html">Domestic</a></li>
+                      <li><a href="assorted_shots.html">Assorted Shots</a></li>
+          			    </ul>
+                </li>
+                <li><a href="high_power_logo_projection.html">High Power Logo Projection</a></li>
+          	    <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </div>
+          </div>
+        </nav>
 
 
-<!-- Menu-->
-<div class="container">
-  <div class= "logo">
-      <a href="home.html" class="navbar-left"><img src="media/main_logo.jpg">
-</div>
-<div class="menubar">
-  <ul>
-    <li>
-      <a href="home.html">Home</a>
-    </li>
-    <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ground Based Aerial Photography<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-            <li>
-              <a href="ground_based_aerial_photography.html">Examples</a>
-            </li>
-            <li>
-              <a href="structural_detail_images.html">Structural Detail Images</a>
-            </li>
-          </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="active" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RPAS Aerial Photography<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-                <li>
-                  <a href="agricultural.html">Agricultural</a>
-                </li>
-                <li>
-                  <a href="forestry.html">Forestry</a>
-                </li>
-                <li>
-                  <a href="industrial.html">Industrial</a>
-                </li>
-                <li>
-                  <a href="domestic.html">Domestic</a>
-                </li>
-                <li>
-                  <a href="assorted_shots.html">Assorted Shots</a>
-                </li>
-              </ul>
-      </li>
-    <li>
-      <a href="high_power_logo_projection.html">High Power Logo Projection</a>
-    </li>
-    <li>
-      <a href="documentation.html">Documentation</a>
-    </li>
-    <li>
-      <a href="contact.html">Contact Us</a>
-    </li>
-  </ul>
-</div>
+   <!-- Carousel -->
+   <article class="carousel-container">
+     <h1>Forestry</h1>
+     <hr>
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+       <!-- Indicators -->
+       <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li>
+         <li data-target="#myCarousel" data-slide-to="3"></li>
+         <li data-target="#myCarousel" data-slide-to="4"></li>
+         <li data-target="#myCarousel" data-slide-to="5"></li>
+       </ol>
+       <div class="carousel-inner" role="listbox">
+         <div class="item active">
+           <img class="first-slide" src="media/Forestry/1-smallpowys.jpg" alt="First slide">
+           <div class="container">
+             <div class="carousel-caption">
+               <h2>Small Managed Woodland in Powys</h2>
+             </div>
+           </div>
+         </div>
+         <div class="item">
+           <img class="second-slide" src="media/Forestry/2-shropshire.jpg" alt="Second slide">
+           <div class="container">
+             <div class="carousel-caption">
+               <h2>Shropshire Woodland</h2>
+             </div>
+           </div>
+         </div>
+         <div class="item">
+           <img class="third-slide" src="media/Forestry/3-forestry.jpg" alt="Third Slide">
+           <div class="container">
+             <div class="carousel-caption">
+               <h2>Forestry and Crop Inspections</h2>
+             </div>
+           </div>
+         </div>
+         <div class="item">
+           <img class="fourth-slide" src="media/Forestry/4-windblow.jpg" alt="Fourth Slide">
+           <div class="container">
+             <div class="carousel-caption">
+               <h2>Windblow in a Wood Interior</h2>
+             </div>
+           </div>
+         </div>
+         <div class="item">
+           <img class="fifth-slide" src="media/Forestry/5-cropcheck.jpg" alt="Fifth Slide">
+           <div class="container">
+             <div class="carousel-caption">
+               <h2>Looking at Crop 'Check'</h2>
+             </div>
+           </div>
+         </div>
+         <div class="item">
+           <img class="sixth-slide" src="media/Forestry/6-slowgrowth.jpg" alt="Sixth Slide">
+           <div class="container">
+             <div class="carousel-caption">
+               <h2>Close up of Slow Growth 'Check'</h2>
+             </div>
+           </div>
+         </div>
+       </div>
+       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+       </a>
+       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+       </a>
+     </div><!-- end carousel -->
+     </article>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-<div class="container-fluid">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="home.html">Home</a>
-  </div>
-  <div class="collapse navbar-collapse" id="myNavbar">
-    <ul class="nav navbar-nav pull-right">
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ground Based Aerial Photography
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li>
-            <a href="ground_based_aerial_photography.html">Examples</a>
-          </li>
-          <li>
-            <a href="structural_detail_images.html">Structural Detail Images</a>
-          </li>
-        </ul>
-    </li>
-       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">RPAS Aerial Photography
-         <span class="caret"></span></a>
-         <ul class="dropdown-menu">
-          <li><a href="agricultural.html">Agricultural</a></li>
-          <li><a href="forestry.html">Forestry</a></li>
-          <li><a href="industrial.html">Industrial</a></li>
-          <li><a href="domestic.html">Domestic</a></li>
-          <li><a href="assorted_shots.html">Assorted Shots</a></li>
-  			</ul>    </li>
-      <li><a href="high_power_logo_projection.html">High Power Logo Projection</a> </li>
-  	  <li><a href="documentation.html">Documentation</a> </li>
-      <li><a href="contact.html">Contact Us</a></li>
-  </nav>
- </div>
+     <!-- Logo -->
+          <div class="container">
+            <div class= "logo">
+              <a href="home.html" class="navbar-left"><img src="media/main_logo.jpg">
+            </div>
+
+     <!-- Main menubar -->
+            <div class="menubar">
+              <ul>
+                <li>
+                  <a href="home.html">Home</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">Ground Based Aerial Photography
+                  <span class="caret"></span></a>
+                   <ul class="dropdown-menu" role="menu">
+                     <li><a href="ground_based_aerial_photography.html">Examples</a></li>
+                     <li><a href="structural_detail_images.html">Structural Detail Images</a></li>
+                   </ul>
+               </li>
+               <li class="dropdown">
+                 <a class="active" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">RPAS Aerial Photography
+                 <span class="caret"></span></a>
+                   <ul class="dropdown-menu" role="menu">
+                     <li><a href="agricultural.html">Agricultural</a></li>
+                     <li><a href="forestry.html">Forestry</a></li>
+                     <li><a href="industrial.html">Industrial</a></li>
+                     <li><a href="domestic.html">Domestic</a></li>
+                     <li><a href="assorted_shots.html">Assorted Shots</a></li>
+                   </ul>
+               </li>
+               <li><a href="high_power_logo_projection.html">High Power Logo Projection</a></li>
+               <li><a href="documentation.html">Documentation</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+             </ul>
+           </div>
+
+       </body>
+     </html>
