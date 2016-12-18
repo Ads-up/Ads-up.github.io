@@ -19,28 +19,8 @@ height: 70%; /* THIS IS THE HEIGHT OF THE CAROUSEL */
   height: 100%;
 }
 
-.active .buttons {
-  padding: 5px 0;
-  background: #eee;
-  text-align: center;
-  z-index: 10;
-  position: relative;
-}
-.carouselbox button {
-  border: none;
-  display: none;
-}
-.active button {
-  display: block;
-}
-.offscreen {
-  position: absolute;
-  left: -2000px;
-}
+/** When screen is large **/
 
-
-
-/* When screen is large */
 @media (min-width:768px)
 {
   .navbar-fixed-top {
@@ -54,7 +34,8 @@ height: 70%; /* THIS IS THE HEIGHT OF THE CAROUSEL */
   }
 }
 
-/* When screen is small */
+/** When screen is small **/
+
 @media (max-width:767px)
 {
  .logo img {
@@ -66,15 +47,10 @@ height: 70%; /* THIS IS THE HEIGHT OF THE CAROUSEL */
     display:none !important;
   }
   article {
-    margin: 0 !important;
-    margin-top: 200px !important;
+    margin-top: 200px;
     margin-left: 15% !important;
     padding: 0 !important;
   }
-  article.documents {
-    margin-top: 0 !important;
-  }
-
 }
 
 /*** Content ***/
@@ -83,7 +59,18 @@ body {
     margin: 0;
     background-color: #fff;
 }
+
 li {
+  font-family:  Verdana, Arial, sans-serif;
+}
+
+article {
+  margin-left:25%;
+  padding:20px 25px 0 30px;
+  height:1000px;
+  width: 70%;
+  position: absolute;
+  text-align: center;
   font-family:  Verdana, Arial, sans-serif;
 }
 
@@ -102,7 +89,9 @@ li {
   width: 200px;
   height: 200px;
 }
-/* Top navbar */
+
+/** Top navbar **/
+
 #myNavbar.navbar-collapse.collapse.in {
   background-color: #000033;
 }
@@ -113,7 +102,8 @@ li {
   background-color: #000033;
 }
 
-/* Burger menu */
+/** Burger menu **/
+
 .navbar-inverse .navbar-toggle {
   background-color: #000033 !important;
   border-color: #000033 !important;
@@ -128,7 +118,6 @@ li {
 .navbar-inverse .navbar-nav>.open>a:hover {
   background-color: #000033 !important;
 }
-
 
 .navbar-inverse .navbar-nav .dropdown-menu li a {
   background-color: #E1E1E1;
@@ -164,7 +153,7 @@ li {
   white-space: inherit !important;
   background-color: #E1E1E1;
 }
-/* Dropdown background colour when hovering */
+/** Dropdown background colour when hovering **/
 .dropdown-menu li a:focus,
 .dropdown-menu li a:hover {
   background-color: #9D9B9B !important;
@@ -175,7 +164,7 @@ li a {
     padding: 8px 16px;
     text-decoration: none;
 }
-/* Clicked link in dropdown menu text colour grey */
+/** Clicked link in dropdown menu text colour grey **/
 a.dropdown-toggle {
   color: #9d9d9d !important;
 }
@@ -184,20 +173,10 @@ li a.active {
     background-color: #021E61;
     color: #f5f5f5;
 }
-/* Hover over text colour white */
+/** Hover over text colour white **/
 li a:hover:not(.active) {
     color: #f5f5f5 !important;
 }
 li a:focus, a:hover {
   text-decoration: none !important;
-}
-
-article {
-  margin-left:25%;
-  padding:20px 25px 0 30px;
-  height:1000px;
-  position: absolute;
-  width: 70%;
-  text-align: center;
-  font-family:  Verdana, Arial, sans-serif;
 }
