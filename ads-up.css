@@ -51,6 +51,12 @@ height: 70%; /* THIS IS THE HEIGHT OF THE CAROUSEL */
     margin-left: 15% !important;
     padding: 0 !important;
   }
+  .carousel-caption h2 {
+    font-size: 18px;
+  }
+  .carousel-caption p2 {
+    font-size: 14px;
+  }
 }
 
 /*** Content ***/
