@@ -3,6 +3,17 @@
 <html>
   <head>
 
+<script>
+function send()
+{
+	ref = document.sendemail;
+	ref.URL.value = document.URL;
+	if( ref.Message.value=="" )
+		alert('Please enter your message');
+	else
+		ref.submit();
+}
+</script>
 
     <link rel="stylesheet" type="text/css" href="ads-up.css">
 <!--Character incoding-->
@@ -63,8 +74,24 @@
 <!-- Send message -->
     <h4>Call us on:&nbsp;<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>   +44 (0) 1938 561 357</h4>
     <br>
-    <h4>Or send us an Email: info@ads-up-uk.com </h4>
-
+    <h4>Or send us an Email:</h4>
+    <br>
+    <form name="sendemail" action="mailto:adsup@357ltd.com" method="post" class="form-inline">
+      <div class="form-group">
+        <input type="text" class="form-control"  name="Name" placeholder="Your name">
+      </div>
+        <br><br>
+      <div class="form-group">
+        <input type="text" class="form-control" name="Subject" placeholder="Subject">
+      </div>
+          <br><br>
+      <div class="form-group">
+          <textarea class="form-control" rows="5" name="Message" placeholder="Your message here"></textarea>
+      </div>
+          <br><br>
+        <button type="submit" class="btn btn-primary" value="Send Email" onclick="send()"/>Send</button>
+    </form>
+        <br>
 
 <!-- Facebook -->
     <h4>Check out our Facebook page:</h4>
